@@ -32,8 +32,11 @@ public class TV {
         return canal;
     }
 
-    public void setCanal(int canal) {
-        this.canal = canal;
+   public void setCanal(int canal) {
+        if (canal<=120 && canal>=1 && estado == true){
+            this.canal = canal;
+        }
+        
     }
 
     public int getPrecio() {
